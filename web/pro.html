@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpcycleConnect — Tableau de bord professionnel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">↻</span>
+                <span>UpcycleConnect</span>
+            </a>
+            <nav>
+                <a class="" href="index.html">Accueil</a><a class="" href="user.html">Utilisateur</a><a class="active" href="pro.html">Professionnel</a><a class="" href="employee.html">Salarié</a><a class="" href="admin.html">Administration</a>
+                <a href="index.html">← Accueil</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main">
+            <div class="dashboard-top">
+                <div>
+                    <p class="eyebrow">ESPACE PROFESSIONNEL & ARTISAN</p>
+                    <h1>Tableau de bord professionnel</h1>
+                    <p class="muted">Aujourd'hui : <span data-current-date></span></p>
+                </div>
+                <div class="avatar">PR</div>
+            </div>
+
+            <section class="stats-grid">
+                <article class="stat-card"><span class="label">Annonces disponibles</span><strong>128</strong></article><article class="stat-card"><span class="label">Objets réservés</span><strong>7</strong></article><article class="stat-card"><span class="label">Projets</span><strong>4</strong></article><article class="stat-card"><span class="label">Abonnement</span><strong>Premium</strong></article>
+            </section>
+
+            <div class="dashboard-grid">
+                
+        <section class="panel">
+            <h2>Objets à récupérer</h2>
+            <div class="list"><div class="list-item"><div><strong>Bois de palettes</strong><small>Conteneur C-013 • Paris</small></div><span class="badge">Disponible</span></div><div class="list-item"><div><strong>Textile</strong><small>Conteneur C-021 • Montreuil</small></div><span class="badge">Disponible</span></div><div class="list-item"><div><strong>Éléments métalliques</strong><small>Conteneur C-008 • Ivry</small></div><span class="badge">Réservé</span></div></div>
+            <div class="action-row">
+                <button class="small-button" data-demo-action="Cette fonctionnalité sera connectée à l'API plus tard.">Action de démonstration</button>
+            </div>
+        </section>
+        <section class="panel">
+            <h2>Mes projets d'upcycling</h2>
+            <div class="list"><div class="list-item"><div><strong>Collection mobilier</strong><small>12 objets • 68 % terminé</small></div><span class="badge">En cours</span></div><div class="list-item"><div><strong>Lampes recyclées</strong><small>8 objets • 100 % terminé</small></div><span class="badge">Terminé</span></div></div>
+            <div class="action-row">
+                <button class="small-button" data-demo-action="Cette fonctionnalité sera connectée à l'API plus tard.">Action de démonstration</button>
+            </div>
+        </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
