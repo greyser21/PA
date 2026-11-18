@@ -24,7 +24,7 @@
 | **Total HT** | | **132 725,00 €** |
 | TVA 20 % | | **26 545,00 €** |
 | **Total TTC** | | **159 270,00 €** |
-
+ 
 ---
 
 # DEVIS N°1 — COÛT RESSOURCES HUMAINES (homme/jour, TJM)

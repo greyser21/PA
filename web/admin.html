@@ -6,7 +6,7 @@
     <title>UpcycleConnect — Back-office</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="admin">
     <div class="dashboard">
         <aside class="sidebar">
             <a class="brand" href="index.html">
@@ -14,8 +14,11 @@
                 <span>UpcycleConnect</span>
             </a>
             <nav>
-                <a class="" href="index.html">Accueil</a><a class="" href="user.html">Utilisateur</a><a class="" href="pro.html">Professionnel</a><a class="" href="employee.html">Salarié</a><a class="active" href="admin.html">Administration</a>
-                <a href="index.html">← Accueil</a>
+                <a href="index.html">Accueil</a>
+                <a href="user.html">Utilisateur</a>
+                <a href="pro.html">Professionnel</a>
+                <a href="employee.html">Salarié</a>
+                <a class="active" href="admin.html">Administration</a>
             </nav>
         </aside>
 
@@ -29,26 +32,25 @@
                 <div class="avatar">AD</div>
             </div>
 
-            <section class="stats-grid">
-                <article class="stat-card"><span class="label">Utilisateurs</span><strong>1 248</strong></article><article class="stat-card"><span class="label">Annonces à valider</span><strong>14</strong></article><article class="stat-card"><span class="label">Demandes dépôt</span><strong>8</strong></article><article class="stat-card"><span class="label">CA du mois</span><strong>24 580 €</strong></article>
+            <section class="stats-grid" id="admin-stats">
+                <article class="stat-card"><span class="label">Chargement…</span><strong>—</strong></article>
             </section>
 
             <div class="dashboard-grid">
-                
-        <section class="panel">
-            <h2>Actions prioritaires</h2>
-            <div class="list"><div class="list-item"><div><strong>14 annonces</strong><small>Annonces en attente de validation</small></div><span class="badge">À valider</span></div><div class="list-item"><div><strong>8 dépôts</strong><small>Demandes de conteneurs</small></div><span class="badge">À traiter</span></div><div class="list-item"><div><strong>3 événements</strong><small>En attente de validation</small></div><span class="badge">À valider</span></div><div class="list-item"><div><strong>5 documents</strong><small>Documents administratifs</small></div><span class="badge">À vérifier</span></div></div>
-            <div class="action-row">
-                <button class="small-button" data-demo-action="Cette fonctionnalité sera connectée à l'API plus tard.">Action de démonstration</button>
-            </div>
-        </section>
-        <section class="panel">
-            <h2>Activité récente</h2>
-            <div class="list"><div class="list-item"><div><strong>Nouvel utilisateur</strong><small>Compte particulier créé</small></div><span class="badge">Aujourd'hui</span></div><div class="list-item"><div><strong>Achat #UC-1048</strong><small>Professionnel • 125 €</small></div><span class="badge">Aujourd'hui</span></div><div class="list-item"><div><strong>Conteneur C-013</strong><small>Objet récupéré</small></div><span class="badge">Hier</span></div></div>
-            <div class="action-row">
-                <button class="small-button" data-demo-action="Cette fonctionnalité sera connectée à l'API plus tard.">Action de démonstration</button>
-            </div>
-        </section>
+                <section class="panel">
+                    <h2>Actions prioritaires</h2>
+                    <div class="list" id="admin-actions"><div class="list-item"><small>Chargement…</small></div></div>
+                    <div class="action-row">
+                        <button class="small-button" data-demo-action="Validation des éléments en attente">Valider les éléments</button>
+                    </div>
+                </section>
+                <section class="panel">
+                    <h2>Activité récente</h2>
+                    <div class="list" id="admin-activity"><div class="list-item"><small>Chargement…</small></div></div>
+                    <div class="action-row">
+                        <button class="small-button" data-demo-action="Gestion financière et catalogue">Gestion & catalogue</button>
+                    </div>
+                </section>
             </div>
         </main>
     </div>

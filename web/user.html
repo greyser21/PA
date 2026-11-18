@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UpcycleConnect — Bonjour, utilisateur</title>
+    <title>UpcycleConnect — Espace particulier</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="user">
     <div class="dashboard">
         <aside class="sidebar">
             <a class="brand" href="index.html">
@@ -14,8 +14,11 @@
                 <span>UpcycleConnect</span>
             </a>
             <nav>
-                <a class="" href="index.html">Accueil</a><a class="active" href="user.html">Utilisateur</a><a class="" href="pro.html">Professionnel</a><a class="" href="employee.html">Salarié</a><a class="" href="admin.html">Administration</a>
-                <a href="index.html">← Accueil</a>
+                <a href="index.html">Accueil</a>
+                <a class="active" href="user.html">Utilisateur</a>
+                <a href="pro.html">Professionnel</a>
+                <a href="employee.html">Salarié</a>
+                <a href="admin.html">Administration</a>
             </nav>
         </aside>
 
@@ -23,33 +26,47 @@
             <div class="dashboard-top">
                 <div>
                     <p class="eyebrow">ESPACE PARTICULIER</p>
-                    <h1>Bonjour, utilisateur</h1>
+                    <h1 id="user-greeting">Bonjour, <span id="user-name">…</span></h1>
                     <p class="muted">Aujourd'hui : <span data-current-date></span></p>
                 </div>
-                <div class="avatar">EU</div>
+                <div class="avatar" id="user-avatar">EU</div>
             </div>
 
-            <section class="stats-grid">
-                <article class="stat-card"><span class="label">Annonces publiées</span><strong>3</strong></article><article class="stat-card"><span class="label">Objets déposés</span><strong>2</strong></article><article class="stat-card"><span class="label">Réservations</span><strong>1</strong></article><article class="stat-card"><span class="label">Upcycling Score</span><strong>84</strong></article>
+            <section class="stats-grid" id="user-stats">
+                <article class="stat-card"><span class="label">Chargement…</span><strong>—</strong></article>
             </section>
 
             <div class="dashboard-grid">
-                
-        <section class="panel">
-            <h2>Mes dernières annonces</h2>
-            <div class="list"><div class="list-item"><div><strong>Ancienne commode</strong><small>Don • Paris</small></div><span class="badge">En ligne</span></div><div class="list-item"><div><strong>Chutes de tissu</strong><small>Don • Montreuil</small></div><span class="badge">En ligne</span></div><div class="list-item"><div><strong>Lampe à restaurer</strong><small>Vente • 25 €</small></div><span class="badge">En attente</span></div></div>
-            <div class="action-row">
-                <button class="small-button" data-demo-action="Cette fonctionnalité sera connectée à l'API plus tard.">Action de démonstration</button>
+                <section class="panel">
+                    <h2>Mes dernières annonces</h2>
+                    <div class="list" id="user-announcements"><div class="list-item"><small>Chargement des annonces…</small></div></div>
+                    <div class="action-row">
+                        <button class="small-button" id="btn-new-announcement" data-demo-action="Ouverture du formulaire d'annonce">Déposer une annonce</button>
+                    </div>
+                </section>
+                <section class="panel">
+                    <h2>Prochaines activités</h2>
+                    <div class="list" id="user-activities"><div class="list-item"><small>Chargement des activités…</small></div></div>
+                    <div class="action-row">
+                        <button class="small-button" id="btn-deposit" data-demo-action="Demande de dépôt envoyée au service Check">Demander un dépôt (conteneur)</button>
+                    </div>
+                </section>
             </div>
-        </section>
-        <section class="panel">
-            <h2>Prochaines activités</h2>
-            <div class="list"><div class="list-item"><div><strong>Atelier upcycling bois</strong><small>Samedi • 14:00</small></div><span class="badge">Réservé</span></div><div class="list-item"><div><strong>Formation textile</strong><small>12 septembre • 18:00</small></div><span class="badge">À venir</span></div></div>
-            <div class="action-row">
-                <button class="small-button" data-demo-action="Cette fonctionnalité sera connectée à l'API plus tard.">Action de démonstration</button>
-            </div>
-        </section>
-            </div>
+
+            <section class="panel" style="margin-top:20px;">
+                <h2>Nouvelle annonce (don ou vente)</h2>
+                <form id="announcement-form" class="inline-form">
+                    <input type="text" name="title" placeholder="Titre de l'objet" required>
+                    <select name="type" required>
+                        <option value="don">Don</option>
+                        <option value="vente">Vente</option>
+                    </select>
+                    <input type="text" name="location" placeholder="Localisation">
+                    <input type="text" name="price" placeholder="Prix (si vente)">
+                    <button type="submit" class="small-button">Publier (validation requise)</button>
+                </form>
+                <p class="muted" id="announcement-feedback"></p>
+            </section>
         </main>
     </div>
     <script src="js/app.js"></script>
