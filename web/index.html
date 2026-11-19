@@ -1,111 +1,201 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UpcycleConnect — Accueil</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UpcycleConnect — Que faire de vos objets et matériaux ?</title>
+<meta name="description" content="Donnez, récupérez et transformez : la plateforme qui met en relation particuliers, artisans et équipes autour de l'upcycling.">
+<link rel="icon" href="logo.jpg">
+<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <header class="site-header">
-        <a class="brand" href="index.html">
-            <span class="brand-mark">↻</span>
-            <span>UpcycleConnect</span>
-        </a>
-        <nav>
-            <a href="#espaces">Espaces</a>
-            <a href="#fonctionnement">Fonctionnement</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <div>
-                <p class="eyebrow">LA PLATEFORME DE L'UPCYCLING INTELLIGENT</p>
-                <h1>Donner une seconde vie aux objets.</h1>
-                <p class="hero-text">
-                    Une plateforme qui met en relation particuliers, professionnels,
-                    artisans et équipes UpcycleConnect.
-                </p>
-                <div class="hero-actions">
-                    <a class="button primary" href="#espaces">Découvrir les espaces</a>
-                    <a class="button secondary" href="#fonctionnement">Voir le fonctionnement</a>
-                </div>
-            </div>
-            <div class="hero-card">
-                <span class="hero-icon">♻</span>
-                <h2>Upcycling</h2>
-                <p>Réutiliser, transformer et valoriser plutôt que jeter.</p>
-            </div>
-        </section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8M12 8v13M12 8C10 3.5 6 4 7 6.5c.6 1.5 5 1.5 5 1.5zm0 0c2-4.5 6-4 5-1.5-.6 1.5-5 1.5-5 1.5z"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.1L3 17.7 6.3 21l6.3-6.3a4 4 0 0 0 5.1-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13M8 7h7"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
+  <symbol id="i-shop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9l1.5-5h13L20 9M4 9v11h16V9M4 9a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0A2.7 2.7 0 0 0 20 9M10 20v-5h4v5"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+</svg>
 
-        <section id="espaces" class="section">
-            <div class="section-heading">
-                <p class="eyebrow">4 ESPACES</p>
-                <h2>Choisissez votre espace</h2>
-                <p>Ces pages constituent le squelette fonctionnel de l'application.</p>
-            </div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo.jpg" alt=""><b>UpcycleConnect</b></a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="#geste">Comment ça marche</a>
+      <a href="#annonces">Annonces</a>
+      <a href="#faq">Questions</a>
+      <div class="dd" id="dd">
+        <button aria-expanded="false" aria-controls="dd-menu">Mes espaces ▾</button>
+        <div class="dd-menu" id="dd-menu">
+          <a href="user.html">Particulier</a>
+          <a href="pro.html">Professionnel &amp; artisan</a>
+          <a href="employee.html">Salarié</a>
+          <a href="admin.html">Administration</a>
+        </div>
+      </div>
+    </nav>
+    <span class="spacer"></span>
+    <a class="btn btn-primary" href="user.html">Déposer un objet</a>
+    <button class="btn btn-line burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
 
-            <div class="space-grid">
-                <a class="space-card user" href="user.html">
-                    <span class="space-icon">👤</span>
-                    <div>
-                        <p class="card-label">PARTICULIERS</p>
-                        <h3>Espace utilisateur</h3>
-                        <p>Annonces, objets, formations, événements, planning et Upcycling Score.</p>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">La plateforme de l'upcycling</p>
+      <h1>Que faire de vos objets et <span>matériaux&nbsp;?</span></h1>
+      <p class="lead">Ne les jetez pas&nbsp;! <strong>Donnez-leur une seconde vie</strong> : déposez-les, vendez-les ou confiez-les à des artisans près de chez vous.</p>
+      <form class="search" id="search" role="search">
+        <label for="q">Entrez un objet ou un matériau</label>
+        <input id="q" name="q" type="search" placeholder="Palettes, tissu, commode…" autocomplete="off">
+        <button class="btn btn-primary" type="submit"><svg width="18" height="18"><use href="#i-search"/></svg>Rechercher</button>
+      </form>
+      <div class="shortcuts">
+        <span>Les plus cherchés :</span>
+        <a href="#annonces" data-q="bois">Bois</a>
+        <a href="#annonces" data-q="tissu">Textile</a>
+        <a href="#annonces" data-q="commode">Mobilier</a>
+        <a href="#annonces" data-q="lampe">Luminaires</a>
+      </div>
+      <div class="hero-stats">
+        <div><b id="st-cont">3</b><span>conteneurs de dépôt</span></div>
+        <div><b id="st-ann">2</b><span>annonces en ligne</span></div>
+        <div><b id="st-evt">2</b><span>ateliers et formations</span></div>
+      </div>
+    </div>
+  </section>
 
-                <a class="space-card pro" href="pro.html">
-                    <span class="space-icon">🏢</span>
-                    <div>
-                        <p class="card-label">PROFESSIONNELS & ARTISANS</p>
-                        <h3>Espace professionnel</h3>
-                        <p>Annonces, achats, abonnements, projets et récupération des objets.</p>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
+  <section class="s" id="geste">
+    <div class="wrap">
+      <div class="s-head"><div><h2>Le réflexe des bons gestes</h2><p>Quatre façons simples de prolonger la vie des objets.</p></div></div>
+      <div class="gestes">
+        <div class="geste"><div class="ic"><svg><use href="#i-pin"/></svg></div><h3>Trouvez un conteneur</h3><p>Repérez le lieu de dépôt le plus proche et recevez votre code d'ouverture.</p></div>
+        <div class="geste"><div class="ic"><svg><use href="#i-gift"/></svg></div><h3>Donnez ou vendez</h3><p>Publiez une annonce en quelques minutes. Elle est vérifiée avant d'être visible.</p></div>
+        <div class="geste"><div class="ic"><svg><use href="#i-tool"/></svg></div><h3>Récupérez des matériaux</h3><p>Artisans et professionnels réservent les objets et les retirent avec un code-barres.</p></div>
+        <div class="geste"><div class="ic"><svg><use href="#i-book"/></svg></div><h3>Apprenez à transformer</h3><p>Ateliers, formations et conseils pour réparer, détourner et valoriser.</p></div>
+      </div>
+    </div>
+  </section>
 
-                <a class="space-card employee" href="employee.html">
-                    <span class="space-icon">🧑‍🏫</span>
-                    <div>
-                        <p class="card-label">SALARIÉS</p>
-                        <h3>Espace salarié</h3>
-                        <p>Formations, planning, conseils, actualités et modération des forums.</p>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
+  <section class="s alt" id="annonces">
+    <div class="wrap">
+      <div class="s-head">
+        <div><h2>Dernières annonces</h2><p>Des objets et matériaux disponibles près de chez vous.</p></div>
+        <a class="link" href="user.html">Déposer une annonce →</a>
+      </div>
+      <div class="cards" id="latest">
+        <article class="card"><div class="row"><span class="tag don">Don</span><span class="loc"><svg><use href="#i-pin"/></svg>Paris</span></div><h3><a class="stretch" href="user.html">Ancienne commode</a></h3><p>À récupérer sur place, quelques retouches à prévoir.</p><span class="more">Voir l'annonce →</span></article>
+        <article class="card"><div class="row"><span class="tag don">Don</span><span class="loc"><svg><use href="#i-pin"/></svg>Montreuil</span></div><h3><a class="stretch" href="user.html">Chutes de tissu</a></h3><p>Lot de chutes de coton et de lin, idéal pour du patchwork.</p><span class="more">Voir l'annonce →</span></article>
+        <article class="card"><div class="row"><span class="tag vente">Vente · 25 €</span><span class="loc"><svg><use href="#i-pin"/></svg>Paris</span></div><h3><a class="stretch" href="user.html">Lampe à restaurer</a></h3><p>Pied en laiton, câblage à refaire.</p><span class="more">Voir l'annonce →</span></article>
+      </div>
+      <p class="empty" id="empty">Aucune annonce ne correspond à votre recherche.</p>
+    </div>
+  </section>
 
-                <a class="space-card admin" href="admin.html">
-                    <span class="space-icon">⚙</span>
-                    <div>
-                        <p class="card-label">ADMINISTRATION</p>
-                        <h3>Back-office</h3>
-                        <p>Utilisateurs, validations, catalogue, conteneurs, notifications et gestion.</p>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
-        </section>
+  <section class="s" id="espaces">
+    <div class="wrap">
+      <div class="s-head"><div><h2>Choisissez votre espace</h2><p>Chaque profil dispose d'un tableau de bord adapté.</p></div></div>
+      <div class="spaces">
+        <div class="space"><div class="ic"><svg><use href="#i-user"/></svg></div><small>Particuliers</small><h3>Espace utilisateur</h3><p>Annonces, dépôts en conteneur, réservations et Upcycling Score.</p><a class="go" href="user.html">Accéder →</a></div>
+        <div class="space"><div class="ic"><svg><use href="#i-shop"/></svg></div><small>Pros &amp; artisans</small><h3>Espace professionnel</h3><p>Matériaux à récupérer, projets d'upcycling, contrats et facturation.</p><a class="go" href="pro.html">Accéder →</a></div>
+        <div class="space"><div class="ic"><svg><use href="#i-cal"/></svg></div><small>Salariés</small><h3>Espace salarié</h3><p>Formations, planning, conseils et modération du forum.</p><a class="go" href="employee.html">Accéder →</a></div>
+        <div class="space"><div class="ic"><svg><use href="#i-shield"/></svg></div><small>Administration</small><h3>Back-office</h3><p>Validations, utilisateurs, catalogue, conteneurs et contrats.</p><a class="go" href="admin.html">Accéder →</a></div>
+      </div>
+    </div>
+  </section>
 
-        <section id="fonctionnement" class="section light-section">
-            <div class="section-heading">
-                <p class="eyebrow">SQUELETTE DU PROJET</p>
-                <h2>Une base prête à évoluer</h2>
-            </div>
-            <div class="feature-grid">
-                <article><span>01</span><h3>Annonces</h3><p>Don ou vente d'objets et matériaux.</p></article>
-                <article><span>02</span><h3>Conteneurs</h3><p>Demandes de dépôt et récupération des objets.</p></article>
-                <article><span>03</span><h3>Activités</h3><p>Formations, ateliers et événements.</p></article>
-                <article><span>04</span><h3>Impact</h3><p>Suivi des projets et Upcycling Score.</p></article>
-            </div>
-        </section>
-    </main>
+  <section class="s" style="padding-top:0">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Vous êtes artisan ou professionnel&nbsp;?</h2>
+          <p>Accédez en priorité aux matériaux disponibles et suivez vos projets et vos contrats depuis un seul tableau de bord avec l'abonnement Premium.</p>
+        </div>
+        <a class="btn btn-light" href="pro.html">Découvrir l'espace pro</a>
+      </div>
+    </div>
+  </section>
 
-    <footer class="site-footer">
-        <strong>UpcycleConnect</strong>
-        <span>Prototype — Projet annuel 2025-2026</span>
-    </footer>
+  <section class="s alt" id="faq">
+    <div class="wrap">
+      <div class="s-head"><div><h2>Questions fréquentes</h2></div></div>
+      <div class="faq">
+        <details><summary>Que puis-je déposer sur UpcycleConnect&nbsp;?</summary><p>Des objets ou des matériaux dont vous n'avez plus l'usage : mobilier, bois de palettes, textile, luminaires… Chaque dépôt passe par une validation avant d'être proposé aux artisans.</p></details>
+        <details><summary>Comment fonctionne le dépôt en conteneur&nbsp;?</summary><p>Une fois votre demande validée, un conteneur vous est attribué. Vous recevez un code d'ouverture et un code-barres : le premier ouvre le conteneur, le second permet à un artisan de récupérer l'objet.</p></details>
+        <details><summary>Qui valide les annonces&nbsp;?</summary><p>L'équipe d'administration vérifie chaque annonce et chaque demande de dépôt avant publication. Votre annonce reste « en attente » jusqu'à cette validation.</p></details>
+        <details><summary>Est-ce gratuit&nbsp;?</summary><p>Les dons sont gratuits. Les ventes, ateliers et formations sont payants selon le tarif affiché, et les professionnels peuvent souscrire un abonnement pour accéder à des outils de suivi supplémentaires.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html"><img src="logo.jpg" alt=""><b>UpcycleConnect</b></a>
+        <p>La plateforme qui met en relation particuliers, artisans et équipes pour donner une seconde vie aux objets.</p>
+      </div>
+      <div><h4>Explorer</h4><ul><li><a href="#geste">Comment ça marche</a></li><li><a href="#annonces">Annonces</a></li><li><a href="#faq">Questions fréquentes</a></li></ul></div>
+      <div><h4>Mes espaces</h4><ul><li><a href="user.html">Particulier</a></li><li><a href="pro.html">Professionnel</a></li><li><a href="employee.html">Salarié</a></li><li><a href="admin.html">Administration</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 UpcycleConnect — Projet annuel ESGI 2025-2026 (prototype)</span><span>Mentions légales · Données personnelles · Contact</span></div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var list = document.getElementById("latest"), empty = document.getElementById("empty"), all = null;
+  var pin = '<svg><use href="#i-pin"/></svg>';
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+  function card(a) {
+    var tag = a.type === "don" ? '<span class="tag don">Don</span>' : '<span class="tag vente">Vente' + (a.price ? " · " + esc(a.price) : "") + '</span>';
+    return '<article class="card"><div class="row">' + tag + '<span class="loc">' + pin + esc(a.location || "Lieu à préciser") + '</span></div>' +
+      '<h3><a class="stretch" href="user.html">' + esc(a.title) + '</a></h3><p>' + esc(a.description || "Disponible auprès d'un particulier.") + '</p><span class="more">Voir l\'annonce →</span></article>';
+  }
+  function render(q) {
+    q = (q || "").trim().toLowerCase();
+    var f = all.filter(function (a) { return !q || (a.title + " " + (a.location || "")).toLowerCase().indexOf(q) > -1; });
+    list.innerHTML = f.slice(0, 6).map(card).join("");
+    empty.style.display = f.length ? "none" : "block";
+  }
+  function search(q) {
+    if (all) return render(q);
+    var n = 0;
+    Array.prototype.forEach.call(list.children, function (c) {
+      var ok = !q || c.textContent.toLowerCase().indexOf(q.toLowerCase()) > -1;
+      c.style.display = ok ? "" : "none"; if (ok) n++;
+    });
+    empty.style.display = n ? "none" : "block";
+  }
+  function get(u) { return fetch(u).then(function (r) { return r.ok ? r.json() : Promise.reject(); }); }
+  get("/api/announcements").then(function (d) {
+    all = (d.items || []).filter(function (a) { return a.status === "validee"; });
+    document.getElementById("st-ann").textContent = all.length;
+    if (all.length) render("");
+  }).catch(function () {});
+  get("/api/containers").then(function (d) { document.getElementById("st-cont").textContent = (d.items || []).length; }).catch(function () {});
+  get("/api/events").then(function (d) { document.getElementById("st-evt").textContent = (d.items || []).filter(function (e) { return e.status === "valide"; }).length; }).catch(function () {});
+
+  document.getElementById("search").addEventListener("submit", function (e) {
+    e.preventDefault(); search(this.q.value); document.getElementById("annonces").scrollIntoView({ behavior: "smooth" });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll("[data-q]"), function (a) {
+    a.addEventListener("click", function () { document.getElementById("q").value = a.dataset.q; search(a.dataset.q); });
+  });
+  var dd = document.getElementById("dd"), btn = dd.querySelector("button");
+  btn.addEventListener("click", function (e) { e.stopPropagation(); var o = dd.classList.toggle("open"); btn.setAttribute("aria-expanded", o); });
+  document.addEventListener("click", function () { dd.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); });
+  var burger = document.getElementById("burger"), nav = document.getElementById("nav");
+  burger.addEventListener("click", function () { var o = nav.classList.toggle("open"); burger.setAttribute("aria-expanded", o); });
+})();
+</script>
 </body>
 </html>

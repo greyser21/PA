@@ -19,6 +19,8 @@ func main() {
 	// Serve frontend static files (HTML, CSS, JS)
 	r.Static("/css", "./web/css")
 	r.Static("/js", "./web/js")
+	r.Static("/fonts", "./web/fonts")
+	r.StaticFile("/logo.jpg", "./web/logo.jpg")
 	r.StaticFile("/", "./web/index.html")
 	r.StaticFile("/index.html", "./web/index.html")
 	r.StaticFile("/user.html", "./web/user.html")
@@ -27,7 +29,7 @@ func main() {
 	r.StaticFile("/admin.html", "./web/admin.html")
 
 	log.Println("UpcycleConnect server listening on http://localhost:8080")
-	if err := r.Run(":8080"); err != nil {
+	if err := r.Run(":8090"); err != nil {
 		log.Fatal(err)
 	}
 }
