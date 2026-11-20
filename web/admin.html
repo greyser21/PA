@@ -52,6 +52,23 @@
                     </div>
                 </section>
             </div>
+
+            <section class="panel" style="margin-top:20px;">
+                <h2>Utilisateurs</h2>
+                <div class="list" id="admin-users"><div class="list-item"><small>Chargement des utilisateurs…</small></div></div>
+                <form id="user-form" class="inline-form" style="margin-top:18px;">
+                    <input type="text" name="name" placeholder="Nom complet" required>
+                    <input type="email" name="email" placeholder="Adresse e-mail" required>
+                    <select name="role" required>
+                        <option value="particulier">Particulier</option>
+                        <option value="professionnel">Professionnel</option>
+                        <option value="salarie">Salarié</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <button type="submit" class="small-button">Créer l'utilisateur</button>
+                </form>
+                <p class="muted" id="user-feedback"></p>
+            </section>
         </main>
     </div>
     <script src="js/app.js"></script>
